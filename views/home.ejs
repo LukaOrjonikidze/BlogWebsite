@@ -1,0 +1,16 @@
+<%- include('partials/header') -%>
+
+<h1>Home</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde facere ipsam saepe quod, repellat vero repellendus vel quam fugiat, asperiores facilis earum vitae, illum soluta corrupti eius perferendis veniam.
+Magni voluptates, totam eaque qui magnam laudantium quo aliquid placeat quod necessitatibus, adipisci voluptatem minima quam officia. Eveniet amet nesciunt voluptates iure quae nostrum, error dolor quia explicabo, id ipsam!</p>
+
+<% list.forEach(object => { %>
+    <h2><%= object.title %> </h2>
+    <p><%= object.text.substring(0,100) %>... <a href="/posts/<%=object._id%>">Read More</a></p>
+    
+    
+
+<% }) %>
+
+
+<%- include('partials/footer') -%>
